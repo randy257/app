@@ -1,0 +1,14 @@
+name: linty
+
+on: Push
+
+Jobs
+  linty:
+    name: Lint code base
+    runs-on: Ubuntu-latest
+    steps:
+    - name: Checkout code
+    - uses: actions/checkou@v2
+    
+    - name: Run linty
+      uses: 
